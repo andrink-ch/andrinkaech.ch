@@ -14,13 +14,21 @@
   const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
   camera.position.set(0, 0, 14);
 
-  scene.add(new THREE.HemisphereLight(0xffffff, 0xaab6d3, 0.95));
-  const sun = new THREE.DirectionalLight(0xffffff, 0.85);
+  // Less flat ambient light and a stronger warm key light, so the objects get real shading and contrast
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x9aa3b8, 0.55));
+  const sun = new THREE.DirectionalLight(0xfff3e2, 1.35);
   sun.position.set(5, 8, 7); scene.add(sun);
-  const rim = new THREE.DirectionalLight(0x9fb5ff, 0.35);
+  const fill = new THREE.DirectionalLight(0xffffff, 0.25);
+  fill.position.set(0, 2, 10); scene.add(fill);
+  const rim = new THREE.DirectionalLight(0x9fb5ff, 0.3);
   rim.position.set(-6, -2, 4); scene.add(rim);
 
-  const mat = (c, r = 0.55, m = 0.05) => new THREE.MeshStandardMaterial({ color: c, roughness: r, metalness: m });
+  // Hex colours are sRGB; convert them to linear so the sRGB output shows them as intended instead of washed out
+  const mat = (c, r = 0.55, m = 0.05) => {
+    const material = new THREE.MeshStandardMaterial({ roughness: r, metalness: m });
+    material.color.set(c).convertSRGBToLinear();
+    return material;
+  };
 
   // Laptop with code on screen
   function makeLaptop() {
