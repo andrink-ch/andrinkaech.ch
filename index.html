@@ -3,293 +3,330 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Andrin Käch</title>
+<title>Andrin Käch – Informatiker EFZ</title>
+<meta name="description" content="Andrin Käch, Informatiker EFZ aus Kriens. Frontend-Entwicklung und Scrum bei der Suva, zurzeit Berufsmaturität TALS, Mitgründer von rondisach.">
+<meta property="og:title" content="Andrin Käch – Informatiker EFZ">
+<meta property="og:description" content="Frontend-Entwicklung, Scrum und unternehmerisches Denken. Zurzeit Berufsmaturität TALS.">
+<meta property="og:image" content="https://andrinkaech.ch/assets/andrin-kaech.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
-<meta name="description" content="Andrin Käch – Informatiker EFZ, Scrum Master, BM TALS und Mitgründer von rondisach.">
-<link rel="icon" href="assets/favicon.svg?v=4" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="icon" href="assets/favicon.svg?v=6" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#3d5fbf">
-<link rel="stylesheet" href="css/styles.css?v=4">
+<meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="css/styles.css?v=6">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-<div class="progress" aria-hidden="true"></div>
-<header class="top">
-  <div class="wrap">
-    <a class="logo" href="#start">ANDRIN<span>.</span>KÄCH</a>
-    <nav class="links" aria-label="Abschnitte">
-      <a href="#ueber">Über mich</a>
+<a class="skip" href="#profil">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="#top" aria-label="Andrin Käch, zum Seitenanfang">
+      <span class="brand-mark" aria-hidden="true">AK</span>
+      <span class="brand-name">Andrin Käch</span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#profil">Profil</a>
       <a href="#erfahrung">Erfahrung</a>
       <a href="#ausbildung">Ausbildung</a>
-      <a href="#sprachen">Sprachen</a>
-      <a href="#persoenlich">Persönlich</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#kompetenzen">Kompetenzen</a>
     </nav>
-    <a class="pill-btn" href="#kontakt">Kontakt</a>
+    <a class="btn btn-small" href="#kontakt">Kontakt</a>
   </div>
 </header>
 
-<nav class="dots" aria-label="Seitenposition">
-  <a href="#start" aria-label="Start"></a>
-  <a href="#ueber" aria-label="Über mich"></a>
-  <a href="#erfahrung" aria-label="Erfahrung"></a>
-  <a href="#ausbildung" aria-label="Ausbildung"></a>
-  <a href="#sprachen" aria-label="Sprachen"></a>
-  <a href="#persoenlich" aria-label="Persönlich"></a>
-  <a href="#kontakt" aria-label="Kontakt"></a>
-</nav>
+<main id="top">
 
-<section class="hero" id="start">
-  <div class="hero-stage">
-    <div class="halo"></div>
-    <div class="portrait"><img src="assets/andrin-kaech.jpg" width="570" height="760" alt="Porträt von Andrin Käch"></div>
-  </div>
-  <canvas id="three" aria-hidden="true"></canvas>
-  <div class="hello">
-    <div class="hello-card"><small>Hallo, ich bin</small><h1>Andrin Käch</h1></div>
-    <div class="rotator"><span class="sr-only">Ich bin Informatiker, Scrum Master, Pizzaiolo und BM-Schüler.</span><span aria-hidden="true">Ich bin <span class="rot-word">Informatiker</span><span class="caret"></span></span></div>
-  </div>
-  <button class="obj-label" data-obj="code" data-target="#erfahrung" type="button">Code</button>
-  <button class="obj-label" data-obj="pizza" data-target="#rondisach" type="button">Pizza</button>
-  <button class="obj-label" data-obj="cap" data-target="#ausbildung" type="button">BM TALS</button>
-  <div class="hint">Objekte antippen, um zum Abschnitt zu springen</div>
-</section>
-
-<main class="wrap">
-  <section class="block" id="ueber">
-    <div class="eyebrow">Über mich</div>
-    <h2>Wer ich bin</h2>
-    <div class="about">
-      <div class="card">
-        <p>Ich bin Informatiker EFZ und habe meine Lehre bei der SUVA gemacht. Dort habe ich als Scrum Master auch die Arbeit im Team mitorganisiert.</p>
-        <p>Heute besuche ich die BM TALS und baue mit einem Kollegen unser Pizza-Catering rondisach auf. Mein Ziel: in der Informatik bleiben, aber über das Programmieren hinaus Projekte, Menschen und Unternehmen weiterbringen.</p>
-        <p>Als Leiter in der Jungwacht Kriens habe ich gelernt, Gruppen zu führen und Lager zu organisieren.</p>
+  <!-- Einstieg -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Informatiker EFZ · Kriens LU</p>
+        <h1 class="reveal">Ich verbinde Informatik mit Menschen und Ideen.</h1>
+        <p class="lead reveal">Ich bin Andrin Käch. Bei der Suva habe ich Webanwendungen mit Angular entwickelt und als Scrum Master die Zusammenarbeit im Team mitorganisiert. Zurzeit mache ich die Berufsmaturität und baue mit einem Kollegen das Pizza-Catering rondisach auf.</p>
+        <div class="hero-actions reveal">
+          <a class="btn" href="#kontakt">Kontakt aufnehmen</a>
+          <a class="btn btn-ghost" href="#erfahrung">Werdegang ansehen</a>
+        </div>
       </div>
-      <div class="card facts">
-        <div class="fact"><span>Wohnort</span><span>Kriens LU</span></div>
-        <div class="fact"><span>Beruf</span><span>Informatiker EFZ</span></div>
-        <div class="fact"><span>Aktuell</span><span>BM TALS</span></div>
-        <div class="fact"><span>Firma</span><span>rondisach</span></div>
-        <div class="fact"><span>Englisch</span><span>C1 Cambridge</span></div>
+      <figure class="portrait reveal">
+        <img src="assets/andrin-kaech.jpg" width="570" height="760" alt="Porträt von Andrin Käch">
+        <figcaption><span class="dot" aria-hidden="true"></span>Zurzeit an der Berufsmaturität TALS</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <dl class="facts reveal">
+        <div><dt>Abschluss</dt><dd>Informatiker EFZ</dd><dd class="sub">Applikationsentwicklung, Suva</dd></div>
+        <div><dt>Aktuell</dt><dd>Berufsmaturität</dd><dd class="sub">TALS, seit August 2026</dd></div>
+        <div><dt>Englisch</dt><dd>C1</dd><dd class="sub">Cambridge C1 Advanced</dd></div>
+        <div><dt>Unternehmen</dt><dd>Mitgründer</dd><dd class="sub">rondisach, seit September 2026</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Profil -->
+  <section class="section" id="profil">
+    <div class="wrap section-grid">
+      <header class="section-head reveal">
+        <span class="num">01</span>
+        <h2>Profil</h2>
+      </header>
+      <div class="section-body">
+        <div class="prose reveal">
+          <p class="big">Ich will in der Informatik bleiben, aber über das Programmieren hinaus Projekte, Menschen und Unternehmen weiterbringen.</p>
+          <p>In meiner Lehre bei der Suva habe ich gelernt, sauberen Code zu schreiben und gleichzeitig ein Team zu organisieren. Im Zivildienst habe ich ganz andere Welten kennengelernt, vom Spital bis zum Justizvollzug. Und mit rondisach erlebe ich, wie es ist, Verantwortung für ein eigenes Unternehmen zu tragen.</p>
+          <p>Nach der Berufsmaturität möchte ich deshalb an der Schnittstelle von IT und Wirtschaft studieren, zum Beispiel <em>International IT Management</em> oder <em>Business in IT and Digital Transformation</em>.</p>
+        </div>
+
+        <ul class="focus">
+          <li class="reveal">
+            <span class="focus-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            </span>
+            <h3>Frontend-Entwicklung</h3>
+            <p>Vier Jahre Webanwendungen mit Angular, TypeScript und JavaScript entwickelt.</p>
+          </li>
+          <li class="reveal">
+            <span class="focus-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>
+            </span>
+            <h3>Agile Zusammenarbeit</h3>
+            <p>Als Scrum Master die Arbeit im Team mit Scrum und Jira mitorganisiert.</p>
+          </li>
+          <li class="reveal">
+            <span class="focus-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>
+            </span>
+            <h3>Unternehmerisches Denken</h3>
+            <p>Mit rondisach ein eigenes Unternehmen gegründet, von der Offerte bis zum Einsatz.</p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="block" id="erfahrung">
-    <div class="eyebrow">Berufserfahrung</div>
-    <h2>Was ich gemacht habe</h2>
-    <p class="tl-hint"><span class="mouse">Mit der Maus über einen Eintrag fahren für mehr Details.</span><span class="touch">Einen Eintrag antippen für mehr Details.</span></p>
-    <div class="timeline">
-      <article class="card t-item now">
-        <h3>Mitgründer, rondisach <span class="badge">aktuell</span></h3>
-        <div class="when">seit 09/2026</div>
-        <div class="where">Pizza Catering, Kriens · <a href="https://rondisach.ch" target="_blank" rel="noopener">rondisach.ch</a></div>
-        <ul>
-          <li>Zusammen mit einem Kollegen gegründet und aufgebaut</li>
-          <li>Offerten, Planung und Durchführung der Einsätze</li>
-          <li>Website rondisach.ch selbst entwickelt</li>
-        </ul>
-        <div class="more"><div><div class="more-in">
-          <span class="dur">laufend</span>
-          <p>Von der Idee bis zum ersten Auftrag selbst aufgebaut. Ich kümmere mich um Offerten, Planung und den Einsatz vor Ort und habe die Website selbst programmiert.</p>
-          <div class="tags"><span>Unternehmertum</span><span>Kundenkontakt</span><span>Organisation</span></div>
-        </div></div></div>
-      </article>
-      <article class="card t-item">
-        <h3>Zivildienst, Justizvollzugsanstalt Grosshof</h3>
-        <div class="when">01/2026 – 07/2026</div>
-        <div class="where">Kriens</div>
-        <ul>
-          <li>Mit Insassen zusammengearbeitet und ihnen Arbeitsschritte gezeigt</li>
-          <li>Qualitätskontrolle und Ware versandbereit gemacht</li>
-        </ul>
-        <div class="more"><div><div class="more-in">
-          <span class="dur">7 Monate</span>
-          <p>Ein bewusster Schritt aus der Komfortzone: Ich habe ein Umfeld kennengelernt, das die meisten nie sehen, und gelernt, offen und ohne Vorurteile auf Menschen zuzugehen.</p>
-          <p>Ich habe Insassen bei ihren Arbeiten angeleitet und dafür gesorgt, dass die Ware sauber kontrolliert und verschickt wurde.</p>
-          <div class="tags"><span>Komfortzone verlassen</span><span>Anleiten</span><span>Qualitätskontrolle</span><span>Versand</span></div>
-        </div></div></div>
-      </article>
-      <article class="card t-item">
-        <h3>Zivildienst, Pathologie</h3>
-        <div class="when">08/2025 – 11/2025</div>
-        <div class="where">Luzerner Kantonsspital</div>
-        <ul>
-          <li>Allrounder in der ganzen Abteilung: Material sortiert, abgeholt und geliefert</li>
-        </ul>
-        <div class="more"><div><div class="more-in">
-          <span class="dur">4 Monate</span>
-          <p>Als Allrounder war ich in der ganzen Abteilung unterwegs und habe dafür gesorgt, dass Material am richtigen Ort ankommt.</p>
-          <div class="tags"><span>Logistik</span><span>Spitalalltag</span><span>Zuverlässigkeit</span></div>
-        </div></div></div>
-      </article>
-      <article class="card t-item">
-        <h3>Lernender Informatiker EFZ</h3>
-        <div class="when">2021 – 2025</div>
-        <div class="where">Applikationsentwicklung, SUVA</div>
-        <ul>
-          <li>Viel Frontend-Entwicklung mit Angular, TypeScript und JavaScript</li>
-          <li>Scrum Master im Team (mit Jira), dafür einen Scrum-Master-Kurs besucht</li>
-        </ul>
-        <div class="more"><div><div class="more-in">
-          <span class="dur">4 Jahre</span>
-          <p>Vier Jahre Applikationsentwicklung bei der Suva in einem Team aus Lernenden. Wir trugen viel Verantwortung selbst, vor allem im letzten Lehrjahr: Da gehörte ich zu den Erfahrenen und half, die Jüngeren mitzuziehen.</p>
-          <p>Neben dem Programmieren im Frontend habe ich als Scrum Master die Arbeit im Team mitorganisiert.</p>
-          <div class="tags"><span>Verantwortung</span><span>Lernendenteam</span><span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>Scrum</span><span>Jira</span></div>
-        </div></div></div>
-      </article>
+  <!-- Erfahrung -->
+  <section class="section" id="erfahrung">
+    <div class="wrap section-grid">
+      <header class="section-head reveal">
+        <span class="num">02</span>
+        <h2>Erfahrung</h2>
+      </header>
+      <div class="section-body">
+        <ol class="entries">
+
+          <li class="entry reveal">
+            <div class="entry-date">seit 09/2026<span class="tag">aktuell</span></div>
+            <div class="entry-main">
+              <h3>Mitgründer</h3>
+              <p class="entry-org">rondisach, Pizza-Catering · Kriens</p>
+              <p>Zusammen mit einem Kollegen habe ich ein Pizza-Catering für Anlässe in der Region Luzern aufgebaut. Das Schönste daran: Bei jedem Einsatz lernen wir neue Leute kennen und machen ihnen mit unserem Essen eine Freude.</p>
+              <ul>
+                <li>Kundenanfragen, Offerten und Terminplanung</li>
+                <li>Planung und Durchführung der Einsätze vor Ort</li>
+                <li>Entwicklung und Betrieb der Website</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry-date">01/2026 – 07/2026</div>
+            <div class="entry-main">
+              <h3>Zivildienst</h3>
+              <p class="entry-org">Justizvollzugsanstalt Grosshof · Kriens</p>
+              <p>Ein bewusster Schritt aus der Komfortzone: Ich habe ein Umfeld kennengelernt, das die meisten nie sehen, und gelernt, offen und ohne Vorurteile auf Menschen zuzugehen.</p>
+              <ul>
+                <li>Insassen bei ihren Arbeiten angeleitet und Arbeitsschritte erklärt</li>
+                <li>Qualitätskontrolle der hergestellten Ware</li>
+                <li>Ware versandbereit gemacht</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry-date">08/2025 – 11/2025</div>
+            <div class="entry-main">
+              <h3>Zivildienst</h3>
+              <p class="entry-org">Pathologie, Luzerner Kantonsspital · Luzern</p>
+              <ul>
+                <li>Allrounder für die ganze Abteilung</li>
+                <li>Material sortiert, abgeholt und an die richtigen Stellen geliefert</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry-date">2021 – 2025</div>
+            <div class="entry-main">
+              <h3>Lernender Informatiker EFZ, Applikationsentwicklung</h3>
+              <p class="entry-org">Suva · Luzern</p>
+              <p>Vier Jahre in einem Team aus Lernenden mit viel Eigenverantwortung. Im letzten Lehrjahr gehörte ich zu den Erfahrenen und habe die Jüngeren unterstützt.</p>
+              <ul>
+                <li>Frontend-Entwicklung mit Angular, TypeScript und JavaScript</li>
+                <li>Scrum Master im Team, dafür einen Scrum-Master-Kurs besucht</li>
+                <li>Planung und Nachverfolgung der Aufgaben in Jira</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+
+        <!-- rondisach -->
+        <article class="feature reveal" aria-labelledby="rondisach-title">
+          <div class="feature-head">
+            <div>
+              <p class="eyebrow">Eigenes Unternehmen</p>
+              <h3 id="rondisach-title">rondisach</h3>
+              <p>Pizza-Catering für Anlässe in der Region Luzern, frisch vor Ort gebacken.</p>
+            </div>
+            <a class="btn btn-ghost" href="https://rondisach.ch" target="_blank" rel="noopener">rondisach.ch <span aria-hidden="true">↗</span></a>
+          </div>
+          <dl class="feature-stats">
+            <div><dt>Gegründet</dt><dd>09/2026</dd></div>
+            <div><dt>Gründer</dt><dd>2</dd></div>
+            <div><dt>Buchungen</dt><dd>~1 pro Monat</dd></div>
+          </dl>
+          <div class="feature-next">
+            <div class="cal" aria-hidden="true"><span>Dez</span><b>5.–8.</b></div>
+            <p><b>Nächster Auftritt: Weihnachtsmarkt Kriens</b><span>5. bis 8. Dezember 2026, eigener Stand im Bellpark</span></p>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-    <div class="rondisach" id="rondisach">
-      <div class="r-head">
-        <div>
-          <div class="eyebrow">Mein Unternehmen</div>
-          <h2>rondisach</h2>
-          <p class="r-sub">Pizza Catering aus Kriens, gegründet zusammen mit einem Kollegen.</p>
-        </div>
-        <a class="go" href="https://rondisach.ch" target="_blank" rel="noopener">rondisach.ch <span aria-hidden="true">↗</span></a>
+  <!-- Ausbildung -->
+  <section class="section" id="ausbildung">
+    <div class="wrap section-grid">
+      <header class="section-head reveal">
+        <span class="num">03</span>
+        <h2>Ausbildung</h2>
+      </header>
+      <div class="section-body">
+        <ol class="entries">
+          <li class="entry reveal">
+            <div class="entry-date">nach der BM<span class="tag tag-muted">geplant</span></div>
+            <div class="entry-main">
+              <h3>Studium</h3>
+              <p class="entry-org">International IT Management oder Business in IT and Digital Transformation</p>
+            </div>
+          </li>
+          <li class="entry reveal">
+            <div class="entry-date">seit 08/2026<span class="tag">aktuell</span></div>
+            <div class="entry-main">
+              <h3>Berufsmaturität TALS</h3>
+              <p class="entry-org">Technik, Architektur, Life Sciences</p>
+            </div>
+          </li>
+          <li class="entry reveal">
+            <div class="entry-date">2021 – 2025</div>
+            <div class="entry-main">
+              <h3>Informatiker EFZ, Applikationsentwicklung</h3>
+              <p class="entry-org">BBZW Sursee</p>
+            </div>
+          </li>
+          <li class="entry reveal">
+            <div class="entry-date">2018 – 2021</div>
+            <div class="entry-main">
+              <h3>Sekundarschule Niveau A</h3>
+              <p class="entry-org">Schulhaus Kirchbühl, Kriens</p>
+            </div>
+          </li>
+        </ol>
       </div>
+    </div>
+  </section>
 
-      <p class="r-lead">Wir backen frische Pizza direkt bei Anlässen in der Region Luzern. Das Schönste daran: Bei jedem Einsatz lernen wir neue Leute kennen und machen ihnen mit unserem Essen eine Freude.</p>
-
-      <div class="r-stats">
-        <div><b>09/2026</b><span>gegründet</span></div>
-        <div><b>2</b><span>Gründer</span></div>
-        <div><b>~1</b><span>Buchung pro Monat</span></div>
-      </div>
-
-      <div class="r-grid">
-        <div class="r-role">
-          <div class="r-label">Was ich mache</div>
-          <ul>
-            <li><b>Kundenkontakt und Offerten</b><span>Anfragen beantworten, Angebote schreiben, Termine abmachen</span></li>
-            <li><b>Planung und Einsatz</b><span>Den Ablauf planen und vor Ort frisch backen</span></li>
-            <li><b>Website</b><span>rondisach.ch selbst gebaut und betreut</span></li>
-          </ul>
-        </div>
-        <div class="ticket">
-          <div class="ticket-date"><span>Dez</span><b>5.–8.</b><span>2026</span></div>
-          <div class="ticket-body">
-            <div class="r-label">Nächster Auftritt</div>
-            <b>Weihnachtsmarkt Kriens</b>
-            <span>Eigener Stand im Bellpark, zwischen rund 60 Ständen unter den Mammutbäumen.</span>
+  <!-- Kompetenzen -->
+  <section class="section" id="kompetenzen">
+    <div class="wrap section-grid">
+      <header class="section-head reveal">
+        <span class="num">04</span>
+        <h2>Kompetenzen</h2>
+      </header>
+      <div class="section-body">
+        <div class="skills">
+          <div class="panel reveal">
+            <h3>Technologien</h3>
+            <ul class="tags-list">
+              <li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>HTML und CSS</li><li>Git und GitHub</li>
+            </ul>
+          </div>
+          <div class="panel reveal">
+            <h3>Methoden und Tools</h3>
+            <ul class="tags-list">
+              <li>Scrum</li><li>Scrum Master</li><li>Jira</li>
+            </ul>
+          </div>
+          <div class="panel reveal">
+            <h3>Sprachen</h3>
+            <ul class="langs">
+              <li><span>Deutsch</span><span class="level">Muttersprache</span><span class="bar" style="--v:1"></span></li>
+              <li><span>Englisch</span><span class="level">C1 · Cambridge Advanced</span><span class="bar" style="--v:.84"></span></li>
+              <li><span>Französisch</span><span class="level">B1</span><span class="bar" style="--v:.5"></span></li>
+            </ul>
+          </div>
+          <div class="panel reveal">
+            <h3>Zertifikate und Kurse</h3>
+            <ul class="certs">
+              <li><b>Cambridge C1 Advanced</b><span>Englisch</span></li>
+              <li><b>Scrum-Master-Kurs</b><span>während der Lehre bei der Suva</span></li>
+              <li><b>J+S-Leiter Basiskurs</b><span>Jubla Schweiz</span></li>
+              <li><b>SLRG Brevet Basis Pool</b><span>Rettungsschwimmen</span></li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <div class="r-learn">
-        <span class="r-label">Was ich dabei lerne</span>
-        <span class="pill">Verantwortung</span><span class="pill">Organisation</span><span class="pill">Kundenkontakt</span><span class="pill">Unternehmertum</span>
-      </div>
     </div>
   </section>
 
-  <section class="block" id="ausbildung">
-    <div class="eyebrow">Ausbildung</div>
-    <h2>Schulen und Lehre</h2>
-    <div class="timeline">
-      <article class="card t-item plan">
-        <h3>Studium <span class="badge">geplant</span></h3>
-        <div class="when">nach der BM</div>
-        <div class="where">International IT Management oder Business in IT and Digital Transformation</div>
-      </article>
-      <article class="card t-item now">
-        <h3>Berufsmaturität TALS <span class="badge">aktuell</span></h3>
-        <div class="when">seit 08/2026</div>
-        <div class="where">Technik, Architektur, Life Sciences</div>
-      </article>
-      <article class="card t-item">
-        <h3>Lehre Informatiker EFZ</h3>
-        <div class="when">2021 – 2025</div>
-        <div class="where">BBZW Sursee, Richtung Applikationsentwicklung</div>
-      </article>
-      <article class="card t-item">
-        <h3>Sekundarschule Niveau A</h3>
-        <div class="when">2018 – 2021</div>
-        <div class="where">Schulhaus Kirchbühl, Kriens</div>
-      </article>
-    </div>
-  </section>
-
-  <section class="block" id="sprachen">
-    <div class="eyebrow">Sprachen und Zertifikate</div>
-    <h2>Was ich mitbringe</h2>
-    <div class="two">
-      <div class="card lang">
-        <div class="lang-row">
-          <div class="lang-head"><span>Deutsch</span><span>Muttersprache</span></div>
-          <div class="cefr"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></div>
+  <!-- Persönlich -->
+  <section class="section" id="persoenlich">
+    <div class="wrap section-grid">
+      <header class="section-head reveal">
+        <span class="num">05</span>
+        <h2>Persönlich</h2>
+      </header>
+      <div class="section-body">
+        <div class="prose reveal">
+          <p>Ich bin gerne in Bewegung und mache am liebsten Dinge zusammen mit anderen: als Leiter in der Jungwacht Kriens, im Team auf dem Sportplatz oder bei einem Einsatz mit rondisach. Wenn es die Zeit erlaubt, gehe ich auf Reisen, denn neue Orte und Kulturen bringen mich immer wieder auf neue Ideen.</p>
         </div>
-        <div class="lang-row">
-          <div class="lang-head"><span>Englisch</span><span>C1, Cambridge C1 Advanced</span></div>
-          <div class="cefr"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i></div>
-        </div>
-        <div class="lang-row">
-          <div class="lang-head"><span>Französisch</span><span>B1</span></div>
-          <div class="cefr"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i><i></i></div>
-        </div>
-        <div class="cefr-scale" aria-hidden="true"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
-      </div>
-      <div class="card">
-        <div class="cert"><div class="mark">C1</div><div><b>Cambridge C1 Advanced</b><span>Englisch</span></div></div>
-        <div class="cert"><div class="mark">J+S</div><div><b>Jugend+Sport Leiter Basiskurs</b><span>Jubla Schweiz</span></div></div>
-        <div class="cert"><div class="mark">SM</div><div><b>Scrum-Master-Kurs</b><span>während der Lehre bei der SUVA</span></div></div>
-        <div class="cert"><div class="mark">SLRG</div><div><b>Brevet Basis Pool</b><span>Rettungsschwimmen</span></div></div>
-      </div>
-    </div>
-
-    <h2 style="margin-top:56px">Kenntnisse</h2>
-    <div class="chips">
-      <span class="chip">Angular</span>
-      <span class="chip">TypeScript</span>
-      <span class="chip">JavaScript</span>
-      <span class="chip">Frontend-Entwicklung</span>
-      <span class="chip">Scrum <em>· Scrum Master</em></span>
-      <span class="chip">Jira</span>
-      <span class="chip">Git und GitHub</span>
-    </div>
-  </section>
-
-  <section class="block" id="persoenlich">
-    <div class="eyebrow">Persönlich</div>
-    <h2>Was mich sonst ausmacht</h2>
-    <div class="personal">
-      <div class="card">
-        <p>Ich bin gerne in Bewegung. Ob Fussball, Volleyball oder Padel: Sport gehört für mich einfach dazu.</p>
-        <p>Am liebsten mache ich Dinge zusammen mit anderen Menschen, sei es als Leiter in der Jungwacht, im Team auf dem Platz oder bei einem Pizza-Einsatz mit rondisach.</p>
-        <p>Und wenn es die Zeit erlaubt, gehe ich auf Reisen. Neue Orte und Kulturen kennenzulernen, gibt mir immer wieder neue Ideen.</p>
-      </div>
-      <div class="chips">
-        <span class="chip">Fussball</span>
-        <span class="chip">Volleyball</span>
-        <span class="chip">Padel</span>
-        <span class="chip">Reisen</span>
-        <span class="chip">Leiter Jungwacht Kriens</span>
-        <span class="chip">Zeit mit Freunden</span>
+        <ul class="interests reveal">
+          <li>Leiter Jungwacht Kriens</li>
+          <li>Fussball</li>
+          <li>Volleyball</li>
+          <li>Padel</li>
+          <li>Reisen</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="block" id="kontakt">
-    <div class="card contact">
-      <div class="eyebrow">Kontakt</div>
-      <h2>Schreib mir</h2>
-      <p>Für Fragen zu meinem Werdegang, Projekte oder ein Pizza-Catering.</p>
-      <div class="mail">
-        <code id="email">andrin.kaech@icloud.com</code>
-        <button class="pill-btn" id="copy" type="button">Adresse kopieren</button>
+  <!-- Kontakt -->
+  <section class="contact" id="kontakt">
+    <div class="wrap contact-in reveal">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Lass uns sprechen.</h2>
+      <p class="lead">Fragen zu meinem Werdegang, eine gemeinsame Idee oder eine Anfrage für ein Pizza-Catering: Ich freue mich über deine Nachricht.</p>
+      <div class="contact-actions">
+        <a class="btn btn-invert" href="mailto:andrin.kaech@icloud.com">andrin.kaech@icloud.com</a>
+        <button class="btn btn-outline" id="copy" type="button" data-email="andrin.kaech@icloud.com">Adresse kopieren</button>
       </div>
-      <span id="copy-status" role="status"></span>
+      <span class="copy-status" id="copy-status" role="status"></span>
     </div>
   </section>
 </main>
 
-<footer>© 2026 Andrin Käch · Kriens</footer>
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <span>© <span id="year">2026</span> Andrin Käch</span>
+    <span>Kriens, Luzern</span>
+  </div>
+</footer>
 
-<script src="js/main.js?v=4"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="js/hero.js?v=4"></script>
+<script src="js/main.js?v=6"></script>
 </body>
 </html>
